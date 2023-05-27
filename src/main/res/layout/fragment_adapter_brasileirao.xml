@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Posição -->
+
+        <TextView
+            android:id="@+id/textPosition"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <!-- Escudo do time -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="34dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Nome do time -->
+        <TextView
+            android:id="@+id/textTeamName"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="16sp" />
+
+        <!-- Pontos -->
+        <TextView
+            android:id="@+id/textPoints"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <!-- Jogos -->
+        <TextView
+            android:id="@+id/textGames"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <!-- Vitórias -->
+        <TextView
+            android:id="@+id/textWins"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <!-- Empates -->
+        <TextView
+            android:id="@+id/textDraws"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <!-- Derrotas -->
+        <TextView
+            android:id="@+id/textLosses"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <!-- Gols Pró -->
+        <TextView
+            android:id="@+id/textGoalsFor"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <!-- Gols Contra -->
+        <TextView
+            android:id="@+id/textGoalsAgainst"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+        <!-- Saldo de Gols -->
+        <TextView
+            android:id="@+id/textGoalDifference"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?actionBarDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
